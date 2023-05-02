@@ -1,7 +1,6 @@
 <!DOCTYPE html>
+<html lang="es">
 
-<html>
-  
   <head>
     <meta charset="UTF-8">
     <title>NEMESIS Eafit</title>
@@ -12,21 +11,47 @@
   </head>
   
   <body>
-    <div class="container">
-      <img class="logo" src="images/nemesis.png">
-      <h1>
-        Te damos la Bienvenida a Nemesis Eafit
-      </h1>
-      <p>
-        ¿Eres estudiante?, haz parte
-      </p>
-      <button>
-        Inicia sesión
-      </button>
-      <button>
-        Registrate
-      </button>
-    </div>
+
+    <header>
+        <img class="logo" src="images/nemesis.png">
+        <nav class="navigation">
+            <a href="#">Inicio</a>
+            <a href="#">Acerca</a>
+            <a href="#">Contacto</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+    
+    <div class="wrapper">
+        <div class="form-box login">
+            <h2>Iniciar sesión</h2>
+            <form action="#">
+                <div class="input-box">
+                  <span class="icon">
+                    <ion-icon name="mail"></ion-icon>
+                  </span>
+                  <input type="email" required>
+                  <label>Email</label>
+                </div>
+                <div class="input-box">
+                  <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                  </span>
+                  <input type="password" required>
+                  <label>Contraseña</label>
+                </div>
+                <div class="remember-forgot">
+                  <label><input type="checkbox">Recuerdame</label>
+                  <a href="#">¿Olvido su contraseña?</a>
+                </div>
+                <button type="submit" class="btn">Acceder</button>
+                <div class="login-register"> 
+                  <p>¿No tienes una cuenta? <a href="#" class="register-link">Registrate</a></p>
+                </div>
+
+    <script src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 
 </html>
